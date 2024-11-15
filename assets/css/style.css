@@ -944,7 +944,7 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
  * responsive for larger than 575px screen
  */
  
- @media (min-width: 600px) {
+ @media (min-width: 400px) {
 
   /**
     CUSTOM PROPERTY
