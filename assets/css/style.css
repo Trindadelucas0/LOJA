@@ -169,7 +169,9 @@ body {
   font-size: var(--fs-5);
   text-transform: uppercase;
 }
-
+.btn a{
+  color: #ffff;
+}
 .btn {
   background: var(--background, var(--bittersweet));
   color: var(--color, var(--white));
@@ -182,14 +184,15 @@ body {
 }
 
 .btn-primary:is(:hover, :focus) {
-  --background: var(--salmon);
-  --border-color: var(--salmon);
+  --background: var(--bittersweet);
+  --border-color: var(--BRANCO);
+  
 }
 
 .btn-secondary {
   --background: transparent;
   --border-color: var(--black);
-  --color: var(--black);
+  --color: var(--amarelo);
 }
 
 .btn-secondary:is(:hover, :focus) { --background: hsla(0, 0%, 0%, 0.1); }
@@ -528,6 +531,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
 }
 
 
@@ -539,7 +543,7 @@ body {
   color: var(--BRANCO); }
 
 .hero-text {
-  color: var(--BRANCO);
+  color: var(--BRANO);
   font-family: var(--ff-roboto);
   font-size: var(--fs-8);
   line-height: 1.8;
@@ -652,7 +656,7 @@ body {
 
 .special-banner {
   height: 500px;
-  background-color: var(--smoky-black);
+  background-color: var(--BRANCO);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -664,7 +668,7 @@ body {
 }
 
 .special-banner .banner-title {
-  color: var(--white);
+  color: var(--b);
   font-weight: var(--fw-600);
 }
 
