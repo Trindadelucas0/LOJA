@@ -398,7 +398,7 @@ body {
 .nav-open-btn ion-icon { --ionicon-stroke-width: 40px; }
 
 .navbar {
-  background: var(--white);
+  background: var(--bittersweet);
   position: fixed;
   top: 0;
   left: -280px;
@@ -435,7 +435,8 @@ body {
 .nav-close-btn:is(:hover, :focus) { color: var(--bittersweet); }
 
 .navbar .logo {
-  background: var(--maximum-blue-green_10);
+  
+  background: var(--bittersweet);
   padding-block: 50px 40px;
 }
 
@@ -447,6 +448,7 @@ body {
 .navbar-list {
   padding: 20px;
   border-bottom: 1px solid var(--gainsboro);
+  
 }
 
 .navbar-link {
@@ -455,7 +457,7 @@ body {
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--BRANCO); }
+.navbar-link:is(:hover, :focus) { color: var(--amarelo); }
 
 .navbar-item:not(:last-child) { border-bottom: 1px solid var(--gainsboro); }
 
