@@ -350,6 +350,7 @@ body {
 .btn-link {
   --background: none;
   --border-color: none;
+  color:var(--bittersweet);
   padding: 0;
   margin-inline: auto;
   max-width: max-content;
@@ -357,7 +358,7 @@ body {
   font-size: var(--fs-6);
   font-weight: var(--fw-500);
   padding-bottom: 6px;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 2px solid var(--bittersweet);
 }
 
 .btn-link:is(:hover, :focus) { border-color: transparent; }
@@ -471,6 +472,7 @@ body {
 
 .nav-action-btn {
   color: var(--BRANCO);
+  
   display: flex;
   align-items: center;
   gap: 10px;
@@ -792,10 +794,13 @@ body {
 
 .footer-brand {
   padding-bottom: 50px;
-  border-bottom: 1px solid var(--gainsboro);
+  border-bottom: 1px solid var(--salmon);
   margin-bottom: 50px;
 }
+.footer-brand .logo img{
 
+  width: 160px;
+}
 .footer-brand .logo { margin-bottom: 15px; }
 
 .social-list {
