@@ -958,7 +958,7 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
  * responsive for larger than 575px screen
  */
  
- @media (min-width: 600px) {
+ @media (min-width: 400px) {
 
   /**
     CUSTOM PROPERTY
@@ -1030,7 +1030,7 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
    * FOOTERKK
    */
 
-  .footer-brand .logo { margin-bottom: 0; }
+ /*  .footer-brand .logo { margin-bottom: 0; }
 
   .footer-brand {
     display: flex;
@@ -1043,7 +1043,7 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
-
+ */
 }
 
  
