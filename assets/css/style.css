@@ -793,9 +793,9 @@ body {
 .footer-top { background: var(--cultured); }
 
 .footer-brand {
-  padding-bottom: 50px;
+  padding-bottom: 5px;                            /* ajeita a linha do fundo  */
   border-bottom: 1px solid var(--salmon);
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 .footer-brand .logo img{
 
@@ -1123,10 +1123,22 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
     right: 30px;
   }
 
+  .footer-brand .logo { margin-bottom: 0; }
+
+  .footer-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-link-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
 }
 
 
-
+}
 
 
 /**
