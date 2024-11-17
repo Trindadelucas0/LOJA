@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="cart-container">
+    <h1 class="cart-title">Carrinho de Compras</h1>
+
+    <!-- Produto 1 -->
+    <div class="cart-item">
+      <img src="https://via.placeholder.com/150" alt="Produto 1" class="cart-item-image">
+      <div class="cart-item-details">
+        <p class="cart-item-name">Camiseta Estilosa</p>
+        <p class="cart-item-price">R$ 49,99</p>
+      </div>
+      <div class="cart-item-actions">
+        <button class="btn-remove">Remover</button>
+        <input type="number" class="cart-item-quantity" value="1">
+      </div>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="cart-item">
+      <img src="https://via.placeholder.com/150" alt="Produto 2" class="cart-item-image">
+      <div class="cart-item-details">
+        <p class="cart-item-name">Calça Elegante</p>
+        <p class="cart-item-price">R$ 129,99</p>
+      </div>
+      <div class="cart-item-actions">
+        <button class="btn-remove">Remover</button>
+        <input type="number" class="cart-item-quantity" value="1">
+      </div>
+    </div>
+
+    <!-- Resumo do carrinho -->
+    <div class="cart-summary">
+        <p>Total:</p>
+      <div class="cart-total">
+        <p class="cart-total-price">R$ 179,98</p>
+      </div>
+      <button class="btn-checkout">Finalizar Compra</button>
+    </div>
+  </div>
+  <script src="carro.js"></script>
+  
+</body>
+
+</html>
