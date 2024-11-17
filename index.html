@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+x<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>L & M C O L L E C T I O N S</title>
-  
+  <link rel="stylesheet" href="styles.css">
   <!-- 
     - favicon
   -->
@@ -29,7 +29,7 @@
   <!-- 
     - preload banner
   -->
-  <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+  <!-- <link rel="preload" href="./assets/images/hero-banner.png" as="image"> -->
 
 </head>
 
@@ -77,7 +77,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link">Feminino</a>
+            <a href="testecarr.html" class="navbar-link">Feminino</a>
           </li>
 
           <li class="navbar-item">
@@ -266,6 +266,7 @@
       -->
 
       <section class="section cta">
+        
         <div class="container">
 
           <ul class="cta-list">
@@ -364,7 +365,7 @@
                         <ion-icon name="cart-outline"></ion-icon>
                       </button>
 
-                      <div class="card-action-tooltip" id="card-label-1">CARRINHO</div>
+                      <div class="card-action-tooltip carro"  id="card-label-1">CARRINHO</div>
                     </li>
 
                     <li class="card-action-item">
@@ -750,7 +751,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                      <div class="card-action-tooltip"  id="card-label-2">Add to Whishlist</div>
                     </li>
 
                     <li class="card-action-item">
@@ -1327,7 +1328,11 @@
 
 
 
-
+<script src="carro.js">
+  document.addEventListener("DOMContentLoaded", function() {
+  update(); // Chama a função update depois que o DOM estiver totalmente carregado
+});
+</script>
   <!-- 
     - custom js link
   -->
