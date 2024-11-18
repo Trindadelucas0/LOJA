@@ -1,4 +1,4 @@
-x<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -126,7 +126,7 @@ x<!DOCTYPE html>
 
               <data class="nav-action-text" value="318.00">carrinho: <strong>R$00</strong></data>
 
-             
+            
             </button>
           </li>
 
@@ -312,12 +312,12 @@ x<!DOCTYPE html>
         - #PRODUCT
       -->
 
-      <section class="section product">
+      <section class="section product" id="carro" >
         <div class="container">
 
           <h2 class="h2 section-title">C O L E Ç Õ E S</h2>
 
-          <ul class="filter-list">
+          <ul class="filter-list" >
 
             <li>
               <a href="masculino.html"><button class="filter-btn  active">MASCULINO</button></a>
@@ -325,47 +325,26 @@ x<!DOCTYPE html>
             <li>
               <a href="feminino.html"><button class="filter-btn  active">FEMININO</button></a>
             </li>
-            <!-- <li>
-              <button class="filter-btn">MASCULINO</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Feminino</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Puma</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Bata</button>
-            </li> -->
-<!-- 
-            <li>
-              <button class="filter-btn">Apex</button>
-            </li> -->
-            <!-- PENSO EM COLOCAR APENAS MASCULINO E FEMINO NOS MAIS VENDIDOS E NÃO AS CATEGORIAS -->
           </ul>
 
-          <ul class="product-list">
+          <ul class="product-list  " >
 
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
+            <li class="product-item"  >
+              <div class="product-card"   tabindex="0">
 
-                <figure class="card-banner">
+                <figure class="card-banner"  >
                   <img src="assets/images/WhatsApp Image 2024-11-14 at 22.03.00.png" width="312" height="350" loading="lazy"
                     alt="Running Sneaker Shoes" class="image-contain">
 
-                  <div class="card-badge">NOVO</div>  DA PRA COLOCAR DESSA OPÇÃO QUANDO FOR FRETE GRATIS 
+                  <div class="card-badge">NOVO</div>  <!-- DA PRA COLOCAR DESSA OPÇÃO QUANDO FOR FRETE GRATIS -->
 
                   <ul class="card-action-list">
 
                     <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <button class="card-action-btn" id="carro" aria-labelledby="card-label-1">
                         <ion-icon name="cart-outline"></ion-icon>
                       </button>
-
-                      <div class="card-action-tooltip carro"  id="card-label-1">CARRINHO</div>
+                      <div class="card-action-tooltip"  id="card-label-1">CARRINHO</div>
                     </li>
 
                     <li class="card-action-item">
@@ -413,10 +392,10 @@ x<!DOCTYPE html>
               </div>
             </li>
 
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
+            <li class="product-item"  >
+              <div class="product-card"  tabindex="0">
 
-                <figure class="card-banner">
+                <figure class="card-banner" >
                   <img src="assets/images/ROUOA02.jpeg" width="312" height="350" loading="lazy"
                     alt="Leather Mens Slipper" class="image-contain">
 
@@ -468,7 +447,9 @@ x<!DOCTYPE html>
                     <a href="#">SHORT PRETO</a>
                   </h3>
 
-                  <data class="card-price" value="190.85">R$190.85</data>
+                  
+                    <data class="card-price " value="190.85" id="preco" >R$190.85</data>
+                  
 
                 </div>
 
@@ -1343,7 +1324,26 @@ x<!DOCTYPE html>
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const addprodutocarrinho = document.querySelectorAll("#carro");
+  
+  for (let j = 0; j < addprodutocarrinho.length; j++) {
+    addprodutocarrinho[j].addEventListener("click", addproduto);
+  }
+  
+  function addproduto(event) {
+    const botao = event.target;
+    const infoProduto=botao.parentElement.parentElement
+    const img = infoProduto.getElementsByClassName("image-contain")[0].src
+    const nomeprod=infoProduto.getElementsByClassName("card-content")[0].innerText
+    const preco=infoProduto.getElementsByClassName("preco")[0].innerText 
+  //  inferno de gambiarra
+    console.log(preco)
 
+
+    // console.log("botao") // adicionar a lógica de adicionar o produto ao carrinho
+  }
+  </script>
 </body>
 
 </html>
