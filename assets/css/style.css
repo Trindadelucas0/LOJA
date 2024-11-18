@@ -452,10 +452,11 @@ body {
 
 .navbar-list {
   
-  border-bottom: 1px solid var(--gainsboro);
+  /* border-bottom: 1px solid var(--gainsboro); */
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
 }
 
 .navbar-link {
@@ -726,7 +727,7 @@ body {
 }
 
 .service-card .card-icon img {
-  filter: brightness(0) invert(1);
+  filter: brightness(2) invert(0);
   width: 60%;
   height: auto;
 }
